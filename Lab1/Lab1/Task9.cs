@@ -1,6 +1,4 @@
-﻿using System.Reflection.Metadata.Ecma335;
-
-namespace Lab1; 
+﻿namespace Lab1; 
 
 public class Task9 {
 
@@ -23,6 +21,7 @@ public class Task9 {
 
 public interface ICallback {
 
+	// ReSharper disable once UnusedParameter.Global
 	public void CallbackFunction(params string[] args){ }
 
 }
@@ -43,9 +42,9 @@ public class Person {
 		this.Console = console;
 	}
 
-	public string FirstName { get; init; }
-	public string LastName { get; init; }
-	private IConsole Console { get; init; }
+	public string FirstName { get; }
+	public string LastName { get; }
+	private IConsole Console { get; }
 	
 	public void Introduce() => Console.Write($"Hello, I'm {FirstName} {LastName}");
 
