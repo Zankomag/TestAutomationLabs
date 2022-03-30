@@ -36,16 +36,17 @@ public interface IConsole {
 
 public class Person {
 
-	public Person(string firstName, string lastName, IConsole console) {
+	public Person(string firstName, string lastName, IConsole сonsole) {
 		this.FirstName = firstName;
 		this.LastName = lastName;
-		this.Console = console;
+		this.сonsole = сonsole;
 	}
 
 	public string FirstName { get; }
 	public string LastName { get; }
-	private IConsole Console { get; }
 	
-	public void Introduce() => Console.Write($"Hello, I'm {FirstName} {LastName}");
+	private readonly IConsole сonsole;
+	
+	public void Introduce() => сonsole.Write($"Hello, I'm {FirstName} {LastName}");
 
 }
