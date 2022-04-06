@@ -1,4 +1,5 @@
-﻿namespace Lab2; 
+﻿
+namespace Lab2; 
 
 public class Store {
 
@@ -20,7 +21,7 @@ public class Store {
 				price *= currencyExchangeService.GetCurrencyRate(item.Currency, user.Account.Currency);
 			}
 			total += price;
-			database.Items.Remove(item);
+			this.RemoveItem(item);
 		}
 		if(user.Account.Balance <= total)
 			throw new InvalidOperationException("User doesn't have enough balance to pay");
@@ -40,5 +41,20 @@ public class Store {
 	public void AddItem(Item item) => database.Items.Add(item);
 
 	public void RemoveItem(Item item) => database.Items.Remove(item);
+
+	public IList<Item> GetItems() => database.Items;
+
+	public void ReturnItem(Guid purchaseId, User user, Item itemToReturn) {
+		var historyUnit = database.History.FirstOrDefault(x => x.Id == purchaseId && x.User == user && x.Items.Contains(itemToReturn));
+		if(historyUnit != null) {
+			historyUnit.Items.Remove(itemToReturn);
+			decimal price = itemToReturn.Price;
+			if(itemToReturn.Currency != user.Account.Currency) {
+				price *= currencyExchangeService.GetCurrencyRate(itemToReturn.Currency, user.Account.Currency);
+			}
+			user.Account.Balance += price;
+			this.AddItem(itemToReturn);
+		}
+	}
 
 }

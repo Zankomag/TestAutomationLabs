@@ -6,5 +6,8 @@ public class User {
 	public int Id { get; set; }
 	public Account Account { get; set; }
 	public string Country { get; set; }
+	
+	public IList<History> History { get; set; }
+
 
 }
