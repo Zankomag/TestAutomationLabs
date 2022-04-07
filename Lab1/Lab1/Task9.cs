@@ -22,7 +22,7 @@ public class Task9 {
 public interface ICallback {
 
 	// ReSharper disable once UnusedParameter.Global
-	public void CallbackFunction(params string[] args){ }
+	public void CallbackFunction(params string[] args);
 
 }
 

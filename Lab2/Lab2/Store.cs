@@ -14,6 +14,8 @@ public class Store {
 	}
 
 	public void Purchase(User user, List<Item> items) {
+		if(!items.All(x => database.Items.Contains(x)))
+			throw new InvalidOperationException("Store does not have required goods");
 		decimal total = 0;
 		foreach(var item in items) {
 			decimal price = item.Price;
@@ -21,10 +23,10 @@ public class Store {
 				price *= currencyExchangeService.GetCurrencyRate(item.Currency, user.Account.Currency);
 			}
 			total += price;
-			this.RemoveItem(item);
 		}
 		if(user.Account.Balance <= total)
 			throw new InvalidOperationException("User doesn't have enough balance to pay");
+		items.ForEach(item => database.Items.Remove(item));
 		database.History.Add(new History {
 			Id = Guid.NewGuid(),
 			Items = items,
@@ -56,5 +58,8 @@ public class Store {
 			this.AddItem(itemToReturn);
 		}
 	}
+
+	public IList<History> GetHistory(User user) 
+		=> database.History.Where(x => x.User == user && x.Store == this).ToList();
 
 }
