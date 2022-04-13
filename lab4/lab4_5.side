@@ -1,0 +1,891 @@
+{
+  "id": "10c401a2-bfff-4720-a0c9-f4f1270ed7aa",
+  "version": "2.0",
+  "name": "lab3",
+  "url": "http://automationpractice.com/",
+  "tests": [{
+    "id": "ac34d585-e5e1-4fa5-83c8-b4801a533d04",
+    "name": "google_lab3",
+    "commands": [{
+      "id": "ea62fd01-f747-40d6-949b-e70ee5433dd5",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "2fedcfff-a45d-43a1-b27b-d4317f6f15b0",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "196e432e-f6bd-43fc-8b5b-473a2cbab67e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.lnXdpd",
+      "targets": [
+        ["css=.lnXdpd", "css:finder"],
+        ["xpath=//img[@alt='Google']", "xpath:img"],
+        ["xpath=//div[2]/div/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "29c68f93-1b9d-41cf-b7aa-958bc107f0a3",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3026ff3d-1287-4ce8-a684-55b3d1925d5e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=center:nth-child(1) > .gNO89b",
+      "targets": [
+        ["css=center:nth-child(1) > .gNO89b", "css:finder"],
+        ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
+        ["xpath=//div[3]/center/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "82757632-2534-4b25-80a8-9b4d373f2c1c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Gmail",
+      "targets": [
+        ["linkText=Gmail", "linkText"],
+        ["css=.gb_e:nth-child(1) > .gb_d", "css:finder"],
+        ["xpath=//a[contains(text(),'Gmail')]", "xpath:link"],
+        ["xpath=//div[@id='gb']/div/div/div/div/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://mail.google.com/mail/?authuser=0&ogbl')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "af22e1ef-df40-4f8e-972a-1df70b378925",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Google",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "db67d88f-9e10-44a7-a8bd-06fead366fbb",
+    "name": "wikipedia_lab3",
+    "commands": [{
+      "id": "f60cbb2c-d98b-4194-8d6a-ea9dff195c9b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.wikipedia.org/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ab683cfb-4832-4277-9f2b-010fc549abe4",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8b9497f5-23af-4086-9267-983c84f3867f",
+      "comment": "",
+      "command": "click",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c5205985-e13d-49f4-8e7f-9710275935b4",
+      "comment": "",
+      "command": "type",
+      "target": "id=searchInput",
+      "targets": [
+        ["id=searchInput", "id"],
+        ["name=search", "name"],
+        ["css=#searchInput", "css:finder"],
+        ["xpath=//input[@id='searchInput']", "xpath:attributes"],
+        ["xpath=//div[@id='search-input']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "Київ"
+    }, {
+      "id": "959a93d9-22fb-4cc5-9916-0099283faf34",
+      "comment": "",
+      "command": "click",
+      "target": "css=.svg-search-icon",
+      "targets": [
+        ["css=.svg-search-icon", "css:finder"],
+        ["xpath=//form[@id='search-form']/fieldset/button/i", "xpath:idRelative"],
+        ["xpath=//button/i", "xpath:position"],
+        ["xpath=//i[contains(.,'Search')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc1f0829-684c-4eec-a3b7-0baf6b0048b7",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.ib-settlement-cols-row:nth-child(2) > .ib-settlement-cols-cell:nth-child(1) img",
+      "targets": [
+        ["css=.ib-settlement-cols-row:nth-child(2) > .ib-settlement-cols-cell:nth-child(1) img", "css:finder"],
+        ["xpath=//img[@alt='Coat of arms of Kyiv']", "xpath:img"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[4]/td/div[2]/div[2]/div/a/img", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/a/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "211469a1-2e4a-4c85-95b1-4f920dac64b5",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.mergedrow:nth-child(21) > .infobox-data",
+      "targets": [
+        ["css=.mergedrow:nth-child(21) > .infobox-data", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[21]/td", "xpath:idRelative"],
+        ["xpath=//tr[21]/td", "xpath:position"],
+        ["xpath=//td[contains(.,' 2,962,180[2]')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0b15e38e-1f30-456d-bbfe-233f8da9e07e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(5)",
+      "targets": [
+        ["css=tbody:nth-child(1) > tr:nth-child(4) > td:nth-child(5)", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/div[20]/table/tbody/tr[4]/td[4]", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "426f262f-a494-4bd1-b4f9-cf2477d0b779",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21a63cca-bae2-4210-a5cc-67d11e13c58c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "id=Historical_population",
+      "targets": [
+        ["id=Historical_population", "id"],
+        ["css=#Historical_population", "css:finder"],
+        ["xpath=//span[@id='Historical_population']", "xpath:attributes"],
+        ["xpath=//div[@id='mw-content-text']/div/h3[6]/span", "xpath:idRelative"],
+        ["xpath=//h3[6]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "14ba43bd-24bf-4880-8fa2-eed1db283f6a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.infobox tr:nth-child(18) > td",
+      "targets": [
+        ["css=.infobox tr:nth-child(18) > td", "css:finder"],
+        ["xpath=//div[@id='mw-content-text']/div/table/tbody/tr[18]/td", "xpath:idRelative"],
+        ["xpath=//tr[18]/td", "xpath:position"],
+        ["xpath=//td[contains(.,'3516,93 осіб/км²')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e8909157-c7b3-4b0f-b7cf-6b3accda4a7b",
+      "comment": "",
+      "command": "",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "01191c29-d315-4812-a002-9e8864117cf0",
+    "name": "lab4_1",
+    "commands": [{
+      "id": "3f792880-fa87-45b3-ae80-a761c9039836",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bf303251-5a1c-40b3-8cad-cf8e0b4ae6d3",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d6a61d19-dbd7-478a-b72c-136e49ffa392",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3659336-e5f3-4719-be0c-ea579591d686",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Login - My Store",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e33506b7-0042-4b96-b500-c5741e8ee59e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4b06bbbf-64b6-49d8-b726-a5662e091a42",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "vinitiv940@hhmel.com"
+    }, {
+      "id": "1ec33e3e-ad14-42e6-855f-912e66958ee6",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "2cb1690e-2c5a-4694-9a53-ebb95099ba8d",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c476e142-8a05-4e5c-b2e6-93fbb6360712",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//span[contains(text(), 'Alfred Alfred')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "193a4c60-3969-4d88-aa38-6d03250c80eb",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "My account - My Store",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "bfb14b3c-0b74-46a4-ae87-98dfd5da6972",
+    "name": "lab4_2",
+    "commands": [{
+      "id": "4f967ce4-772e-4635-a523-81d716709533",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c6fecdd2-701e-4f2b-97c7-bd92317f8475",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a65ec55f-f71e-45ef-b6ea-878236f9e33c",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "7a17c36f-4802-46d7-8e00-6b7e693a8f44",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a272d314-256f-4464-8ad8-27829b77b0f7",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "vinitiv940@hhmel.com"
+    }, {
+      "id": "9f54bf6a-c8e7-4347-8c86-b386150ff647",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2753a351-776b-4c52-bdf1-68204ee7c7c2",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//li[contains(text(), 'Password is required.')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "532e4f0c-822f-4db9-9245-5ea0e4bde916",
+    "name": "lab4_3",
+    "commands": [{
+      "id": "6dff962b-bda3-4341-9826-6aa011fe200b",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "68a1ff39-01b1-4c0e-b1b0-b8d044180cde",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bcdb2102-b70b-4aed-a5ae-dd25a468eef5",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "649082b1-adaf-4c24-b6fb-32387715abe1",
+      "comment": "",
+      "command": "click",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e83e06c9-53a2-452f-a660-aa52f17b54c5",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "sdfgdfg"
+    }, {
+      "id": "522189ac-8336-4373-8689-dcfd705ef701",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4756759b-c4e4-47a0-84e6-6fabf18d413e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//li[contains(text(), 'An email address required.')]",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "d9a72196-3593-4d82-a426-5834871ad550",
+    "name": "lab4_4",
+    "commands": [{
+      "id": "498e5e00-ada2-4151-8620-8f76ab30a312",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ec10c424-d7e2-40f6-a4f6-0742c018aa62",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "21d19773-54de-4396-bddf-3bef5b573745",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "98868b56-ccb6-4bf0-84ec-4c6324e46f6e",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9b769251-4ef6-46a6-9f02-7fe81a7709a7",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "vinitiv940@hhmel.com"
+    }, {
+      "id": "ff3af8fc-7030-4a3a-8306-4708bc9e5223",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "c851fdee-8a46-4a10-81c2-f564eb58fcb3",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a4b11026-a296-4a4c-88d8-69f5dd6a36c1",
+      "comment": "",
+      "command": "click",
+      "target": "css=.sfHover > a",
+      "targets": [
+        ["css=.sfHover > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'T-shirts')])[2]", "xpath:link"],
+        ["xpath=//div[@id='block_top_menu']/ul/li[3]/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_category=5&controller=category'])[2]", "xpath:href"],
+        ["xpath=//div[6]/ul/li[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "597994b2-eefa-470f-8f5f-3916d404ae83",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Faded Short Sleeve T-shirts",
+      "targets": [
+        ["linkText=Faded Short Sleeve T-shirts", "linkText"],
+        ["css=.right-block .product-name", "css:finder"],
+        ["xpath=//a[contains(text(),'Faded Short Sleeve T-shirts')]", "xpath:link"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div[2]/h5/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_product=1&controller=product'])[4]", "xpath:href"],
+        ["xpath=//div[2]/h5/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Faded Short Sleeve T-shirts')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fc621ce5-e3f9-47cc-9808-77dde45a3bbf",
+      "comment": "",
+      "command": "click",
+      "target": "css=.exclusive > span",
+      "targets": [
+        ["css=.exclusive > span", "css:finder"],
+        ["xpath=//p[@id='add_to_cart']/button/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/p/button/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Add to cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "53d0aeb5-b98b-492b-90b4-d846f204a725",
+      "comment": "",
+      "command": "click",
+      "target": "css=.cross",
+      "targets": [
+        ["css=.cross", "css:finder"],
+        ["xpath=//div[@id='layer_cart']/div/div/span", "xpath:idRelative"],
+        ["xpath=//div[4]/div/div/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "287711ac-7573-4352-9a1d-986a8ed84cbd",
+      "comment": "",
+      "command": "click",
+      "target": "css=a > b",
+      "targets": [
+        ["css=a > b", "css:finder"],
+        ["xpath=//header[@id='header']/div[3]/div/div/div[3]/div/a/b", "xpath:idRelative"],
+        ["xpath=//b", "xpath:position"],
+        ["xpath=//b[contains(.,'Cart')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92b6f082-0f5c-4444-b5a8-5c0116a4cc7a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "linkText=Faded Short Sleeve T-shirts",
+      "targets": [
+        ["linkText=Faded Short Sleeve T-shirts", "linkText"],
+        ["css=.cart_description > .product-name > a", "css:finder"],
+        ["xpath=(//a[contains(text(),'Faded Short Sleeve T-shirts')])[2]", "xpath:link"],
+        ["xpath=//tr[@id='product_1_1_0_673315']/td[2]/p/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_product=1&controller=product#/size-s/color-orange'])[6]", "xpath:href"],
+        ["xpath=//td[2]/p/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e18d2df4-8996-4477-86f5-80c4ff6d7340",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=#product_price_1_1_673315 > .price",
+      "targets": [
+        ["css=#product_price_1_1_673315 > .price", "css:finder"],
+        ["xpath=//span[@id='product_price_1_1_673315']/span", "xpath:idRelative"],
+        ["xpath=//td[4]/span/span", "xpath:position"]
+      ],
+      "value": "$16.51"
+    }, {
+      "id": "8e152044-309c-4f9f-8a29-549afb8417cc",
+      "comment": "",
+      "command": "click",
+      "target": "css=.icon-plus",
+      "targets": [
+        ["css=.icon-plus", "css:finder"],
+        ["xpath=//a[@id='cart_quantity_up_1_1_0_673315']/span/i", "xpath:idRelative"],
+        ["xpath=//a[2]/span/i", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dccb62da-4bb2-45d2-8b55-f834ba948e18",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=total_product_price_1_1_673315",
+      "targets": [
+        ["id=total_product_price_1_1_673315", "id"],
+        ["css=#total_product_price_1_1_673315", "css:finder"],
+        ["xpath=//span[@id='total_product_price_1_1_673315']", "xpath:attributes"],
+        ["xpath=//tr[@id='product_1_1_0_673315']/td[6]/span", "xpath:idRelative"],
+        ["xpath=//td[6]/span", "xpath:position"]
+      ],
+      "value": "$33.02"
+    }]
+  }, {
+    "id": "94cf4f35-75f8-408c-a515-1bc69cd8180b",
+    "name": "lab4_5",
+    "commands": [{
+      "id": "6d66e4f9-ac11-4a1f-87aa-4ffb2e00819a",
+      "comment": "",
+      "command": "open",
+      "target": "http://automationpractice.com/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c9d1455c-9c0a-40df-bddc-2c7dc728d869",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1050x708",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1c7dffe0-3235-4b30-8b27-22bd8c2b6035",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign out",
+      "targets": [
+        ["linkText=Sign out", "linkText"],
+        ["css=.logout", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign out')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div[2]/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?mylogout=']", "xpath:href"],
+        ["xpath=//div[2]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e4c1812c-5501-490e-973e-3153cea34a35",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Sign in",
+      "targets": [
+        ["linkText=Sign in", "linkText"],
+        ["css=.login", "css:finder"],
+        ["xpath=//a[contains(text(),'Sign in')]", "xpath:link"],
+        ["xpath=//header[@id='header']/div[2]/div/div/nav/div/a", "xpath:idRelative"],
+        ["xpath=//a[@href='http://automationpractice.com/index.php?controller=my-account']", "xpath:href"],
+        ["xpath=//nav/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Sign in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "659061d4-d65b-429a-980d-5190fa84bdd5",
+      "comment": "",
+      "command": "click",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b20f7c99-5e73-4997-962a-993a28dcdf9f",
+      "comment": "",
+      "command": "type",
+      "target": "id=email",
+      "targets": [
+        ["id=email", "id"],
+        ["name=email", "name"],
+        ["css=#email", "css:finder"],
+        ["xpath=//input[@id='email']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/form/div/div/input", "xpath:position"]
+      ],
+      "value": "vinitiv940@hhmel.com"
+    }, {
+      "id": "44f0d9ff-de2f-4cf6-8390-76ebfd5c4857",
+      "comment": "",
+      "command": "type",
+      "target": "id=passwd",
+      "targets": [
+        ["id=passwd", "id"],
+        ["name=passwd", "name"],
+        ["css=#passwd", "css:finder"],
+        ["xpath=//input[@id='passwd']", "xpath:attributes"],
+        ["xpath=//form[@id='login_form']/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//span/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "edc2abf2-7e3b-4b3c-aea7-302cdb4a90d5",
+      "comment": "",
+      "command": "click",
+      "target": "css=#SubmitLogin > span",
+      "targets": [
+        ["css=#SubmitLogin > span", "css:finder"],
+        ["xpath=//button[@id='SubmitLogin']/span", "xpath:idRelative"],
+        ["xpath=//p[2]/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "64ee71a9-3ce0-45d8-a4f6-1011550975f1",
+      "comment": "",
+      "command": "click",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c49158-6c43-42b0-95c7-bfa3492b11a4",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "name=submit_search",
+      "targets": [
+        ["name=submit_search", "name"],
+        ["css=.button-search", "css:finder"],
+        ["xpath=//button[@name='submit_search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dd50993a-e895-42ff-8a6a-ae9bbe07f1d9",
+      "comment": "",
+      "command": "type",
+      "target": "id=search_query_top",
+      "targets": [
+        ["id=search_query_top", "id"],
+        ["name=search_query", "name"],
+        ["css=#search_query_top", "css:finder"],
+        ["xpath=//input[@id='search_query_top']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/input[4]", "xpath:idRelative"],
+        ["xpath=//input[4]", "xpath:position"]
+      ],
+      "value": "Printed Chiffon Dress"
+    }, {
+      "id": "3f7e3206-6725-4620-b21c-62c4275a42bf",
+      "comment": "",
+      "command": "click",
+      "target": "name=submit_search",
+      "targets": [
+        ["name=submit_search", "name"],
+        ["css=.button-search", "css:finder"],
+        ["xpath=//button[@name='submit_search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0549445d-2dd1-4e61-a554-ad6c44e0d96e",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "name=submit_search",
+      "targets": [
+        ["name=submit_search", "name"],
+        ["css=.button-search", "css:finder"],
+        ["xpath=//button[@name='submit_search']", "xpath:attributes"],
+        ["xpath=//form[@id='searchbox']/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1c508e63-322f-4a5a-ac6c-e648bb601823",
+      "comment": "",
+      "command": "click",
+      "target": "id=columns",
+      "targets": [
+        ["id=columns", "id"],
+        ["css=#columns", "css:finder"],
+        ["xpath=//div[@id='columns']", "xpath:attributes"],
+        ["xpath=//div[@id='page']/div[2]/div", "xpath:idRelative"],
+        ["xpath=//body/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "659e17f9-aac7-4fbf-8ef6-122d246a5bd5",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.content_price:nth-child(3) > .price-percent-reduction",
+      "targets": [
+        ["css=.content_price:nth-child(3) > .price-percent-reduction", "css:finder"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div[2]/div/span[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div/span[3]", "xpath:position"]
+      ],
+      "value": "-20%"
+    }, {
+      "id": "04fea415-56bb-49d0-997d-c93b1321d033",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=.first-in-line .product-name",
+      "targets": [
+        ["css=.first-in-line .product-name", "css:finder"],
+        ["xpath=(//a[contains(text(),'Printed Chiffon Dress')])[2]", "xpath:link"],
+        ["xpath=//div[@id='center_column']/ul/li/div/div[2]/h5/a", "xpath:idRelative"],
+        ["xpath=(//a[@href='http://automationpractice.com/index.php?id_product=7&controller=product&search_query=Printed+Chiffon+Dress&results=2'])[4]", "xpath:href"],
+        ["xpath=//div[2]/h5/a", "xpath:position"]
+      ],
+      "value": "Printed Chiffon Dress"
+    }]
+  }],
+  "suites": [{
+    "id": "452f37b7-2ba8-474f-af2c-eaa48a49acc3",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://www.google.com/", "https://www.wikipedia.org/", "http://automationpractice.com/"],
+  "plugins": []
+}
