@@ -156,10 +156,17 @@
       "targets": [],
       "value": ""
     }, {
+      "id": "739221c6-6f81-43e9-932b-ca1acf246544",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "Google",
+      "targets": [],
+      "value": ""
+    }, {
       "id": "196e432e-f6bd-43fc-8b5b-473a2cbab67e",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=.lnXdpd",
+      "target": "xpath=//img[@alt='Google']",
       "targets": [
         ["css=.lnXdpd", "css:finder"],
         ["xpath=//img[@alt='Google']", "xpath:img"],
@@ -182,7 +189,7 @@
       "id": "3026ff3d-1287-4ce8-a684-55b3d1925d5e",
       "comment": "",
       "command": "assertElementPresent",
-      "target": "css=center:nth-child(1) > .gNO89b",
+      "target": "xpath=(//input[@name='btnK'])[2]",
       "targets": [
         ["css=center:nth-child(1) > .gNO89b", "css:finder"],
         ["xpath=(//input[@name='btnK'])[2]", "xpath:attributes"],
@@ -203,13 +210,6 @@
         ["xpath=//a", "xpath:position"],
         ["xpath=//a[contains(.,'Gmail')]", "xpath:innerText"]
       ],
-      "value": ""
-    }, {
-      "id": "af22e1ef-df40-4f8e-972a-1df70b378925",
-      "comment": "",
-      "command": "assertTitle",
-      "target": "Google",
-      "targets": [],
       "value": ""
     }]
   }],
